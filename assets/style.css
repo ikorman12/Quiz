@@ -9,3 +9,13 @@
     --background: rgb(66, 98, 196);
     --header: rgb(0, 60, 255);
 }
+
+body {
+    background-color: var(--background);
+}
+
+.header {
+    text-align:center;
+    font-size: 100px;
+    background-color: var(--header);
+}
