@@ -19,3 +19,7 @@ body {
     font-size: 100px;
     background-color: var(--header);
 }
+
+.hide{
+    display:none;
+}
