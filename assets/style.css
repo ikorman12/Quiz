@@ -19,3 +19,11 @@ body {
     font-size: 100px;
     background-color: var(--header);
 }
+
+.quiz {
+    visibility: hidden;
+}
+
+.end{
+    visibility: hidden;
+}
