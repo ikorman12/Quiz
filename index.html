@@ -12,13 +12,23 @@
         <h1>CODING QUIZ</h1>
     </header>
 <main>
-<div class="start" id="startBtn"><button>start quiz</button></div>
-<div class="quiz" id="qStart"> quiz text</div>
-<div class="end"> quiz end </div>
-    
-</main>
- 
-    
+    <h4 class="timer">60</h4>
+        <section id="start">
+            <button class="startBtn">Start Game</button>
+        </section>
+    <section id="quiz" class="hide">
+        <h2 class="text"></h2>
+            <div class="choiceBox"></div>
+    </section>
+    <section id="end" class="hide">
+        <p> Congratulations on completing the test, please enter your initials to record your entry! </p>
+        <form id="scorea" class="hide">
+            <label for="initials" >Initials</label>
+            <input name=initials id="initials" type="text" maxlength="3">
+                <button type="button" id="savebtn"> Save</button>
+        </form> 
+    </section>
+</main>    
     <script src="./assets/script.js"></script>
 </body>
 </html>
