@@ -102,6 +102,7 @@ function endGame(){
        //stop clock fn
         clearTimeout(timeInterval);
         //show score
+        //ask to play again
 
 }
 
@@ -111,13 +112,18 @@ function saveHighScore (event) {
     var initials= document.getElementById('initials').value;
     var scoreObj= {initials, finalScore};
     console.log (scoreObj);
+    // if(time>=0){
     highScores.push(scoreObj);
     localStorage.setItem('highScores', JSON.stringify(highScores));
-}
+    document.getElementById('final').textContent=`
+    Congratulations on completing the test, please enter your initials to record your entry!
 
-function showHighScores() {
+    This is your score: ${scoreObj}
+    `;
+//      } else (err) => console.log(err);
     
 }
+
 //USER INTERACTIONS
 saveBtn.addEventListener('click', saveHighScore);
 startBtn.addEventListener('click', startGame);
