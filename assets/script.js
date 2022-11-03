@@ -112,7 +112,7 @@ function saveHighScore (event) {
     var initials= document.getElementById('initials').value;
     var scoreObj= {initials, finalScore};
     console.log (scoreObj);
-    // if(time>=0){
+    if(time>=0){
     highScores.push(scoreObj);
     localStorage.setItem('highScores', JSON.stringify(highScores));
     document.getElementById('final').textContent=`
@@ -120,7 +120,7 @@ function saveHighScore (event) {
 
     This is your score: ${scoreObj}
     `;
-//      } else (err) => console.log(err);
+     } else (err) => console.log(err);
     
 }
 

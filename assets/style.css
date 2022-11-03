@@ -10,11 +10,6 @@
     --background: rgb(129, 155, 231);
     --header: rgb(0, 60, 255);
 }
-
-body {
-    background-color: var(--background);
-}
-
 header {
     margin:0;
     text-align:center;
@@ -22,9 +17,31 @@ header {
     background-color: var(--header);
 }
 
+body {
+    background-color: var(--background);
+}
+main{
+    display:flex;
+    flex-direction: column;
+}
+
+.timer{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .quiz {
     visibility: hidden;
 }
+
+.startBtn {
+    margin:auto;
+}
+
+.choiceBox{
+    
+}
+
 
 section p {
     visibility: hidden;
